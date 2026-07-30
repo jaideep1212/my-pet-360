@@ -1,0 +1,29 @@
+name: mypet360
+description: "Marketplace app connecting dog owners with dog walkers and sitters in Malmö, Sweden."
+
+# Prevents accidental `dart pub publish` to pub.dev. This is an application,
+# not a package, so it must never be published.
+publish_to: 'none'
+
+# <version>+<build number>. The part before "+" becomes the user-visible
+# version name; the part after becomes the Android versionCode / iOS build
+# number and must increase on every Play Store upload.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
