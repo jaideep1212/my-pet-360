@@ -46,7 +46,7 @@ jobs:
       - name: Build TEST APK
         run: |
           flutter build apk --release \
-            --flavor test \
+            --flavor dev \
             --target lib/main_test.dart \
             --build-number=${{ github.run_number }}
 
@@ -56,7 +56,7 @@ jobs:
           appId: ${{ secrets.FIREBASE_ANDROID_APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           groups: test-testers
-          file: build/app/outputs/flutter-apk/app-test-release.apk
+          file: build/app/outputs/flutter-apk/app-dev-release.apk
           releaseNotes: |
             🧪 TEST BUILD
             Commit: ${{ github.event.head_commit.message || github.sha }}
