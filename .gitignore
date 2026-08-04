@@ -42,3 +42,11 @@ firebase-export-*
 # VS Code
 .vscode/settings.json
 
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Flutter migration tooling
+migrate_working_dir/
